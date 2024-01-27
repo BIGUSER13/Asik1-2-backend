@@ -14,7 +14,6 @@
         <nav class="navbar">
             <ul>
                 <li><button class="services-btn" onclick="redirectToServices()">Services</button></li>
-                <li><button class="travel-history-btn" onclick="redirectToTravelHistory()">Travel History</button></li>
                 <li id="userDisplay" style="display: none;"></li>
                 <li id="loginBtn"><button class="login-btn" onclick="redirectToLogin(event)">Login</button></li>
                 <li id="signupBtn"><button class="signup-btn" onclick="redirectToSignup()">Sign up</button></li>
@@ -55,11 +54,12 @@
                 <img src="images/icon1.png" alt="" width="75">
                 <h4>Calculated Weather</h4>
                 <p>Built Wicket longer admire do barton vanity itself do in it.</p>
-                <div class="card-buttons">
-                    <input type="text" id="cityInput" placeholder="Enter city name" style="margin-top: 10px;">
-                    <button onclick="getWeather()" style="margin-top: 10px;">Get Weather</button>
-                    <div id="weatherResult" style="margin-top: 10px;"></div>                    
-                </div>
+<div class="card-buttons">
+    <input type="text" id="cityInput" placeholder="Enter city name" style="margin-top: 10px;">
+    <button onclick="getWeather()" style="margin-top: 10px;">Get Weather</button>
+    <div id="weatherResult" style="margin-top: 10px;"></div>
+</div>
+
             </div>            
             <div class="card">
                 <img src="images/icon2.png" alt="" width="75">
@@ -122,25 +122,24 @@
                     <label for="date">Travel Date:</label>
                     <input type="date" id="dateInput">
                 </div>
-                <div class="booking-title">
-                    <div class="booking-icon icon-1">
-                        <img src="images/chsdest.png" alt="" width="22">
-                    </div>
-                    <div class="booking-icon-title">
-                        <h5>Choose Destination</h5>
-                        <p>Choose favourite place</p>
-                    </div>
+                <div class="booking-input">
+                    <label for="adults">Number of Adults:</label>
+                    <input type="number" id="adultsInput" min="0" value="1">
                 </div>
-                <div class="booking-title">
-                    <div class="booking-icon icon-2">
-                        <img src="images/payment.png" alt="" width="22">
-                    </div>
-                    <div class="booking-icon-title">
-                        <h5>Make Payment</h5>
-                        <p>After finding your favourite spot</p>
-                    </div>
+                <div class="booking-input">
+                    <label for="children">Number of Children:</label>
+                    <input type="number" id="childrenInput" min="0" value="1">
+                </div>
+                <div class="booking-input">
+                    <label for="idToUpdate">Travel ID to Update:</label>
+                    <input type="text" id="idToUpdateInput" placeholder="Enter ID">
+                </div>
+                <div class="booking-input">
+                    <label for="newDate">New Travel Date:</label>
+                    <input type="date" id="newDateInput">
                 </div>
                 <button class="booking-btn" onclick="bookTrip()"> Booking</button>
+                <button class="update-date-btn" onclick="updateTravelDate()">Update Travel Date</button>
                 <button class="makepay-btn" onclick="redirectToPaymentForm()">Make Payment</button>
             </div>
         </div>
@@ -164,12 +163,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="end-text">
-            <p>MAKSOTOV ALI SE-2208</p>
         </div>
     </section>
     <script src="index.js" defer></script>

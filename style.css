@@ -92,6 +92,7 @@ li, a, button {
     background-color: #f1a501;
     color: #fff;
     margin-left: 20px;
+    margin-top: 28px;
 }
 
 .category-title {
@@ -224,12 +225,12 @@ li, a, button {
     margin-bottom: 1rem;
 
 }
-.booking-card{
+.booking-card {
     position: relative;
-    top: 150px;
+    top: 100px; /* Adjust this value to move the card higher */
     left: 20%;
     max-width: 280px;
-    box-shadow: 0 4 px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 3s;
     padding: 1rem;
     background-color: #fffefe;
@@ -237,6 +238,7 @@ li, a, button {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 1.5rem;
 }
+
 .booking-card .booking-img{
     border-radius: 1.5rem;
     margin-top: 0.5rem;
