@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BonjourTours - Travel History</title>
+    <link rel="stylesheet" href="stylehis.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/travellogo.jpeg" alt="" width="170px">
+        <nav class="navbar">
+            <ul>
+                <li><button class="services-btn" onclick="redirectToServices()">Services</button></li>
+                <li><button class="travel-history-btn" onclick="redirectToTravelHistory()">Travel History</button></li>
+                <li id="userDisplay" style="display: none;"></li>
+                <li id="loginBtn"><button class="login-btn" onclick="redirectToLogin(event)">Login</button></li>
+                <li id="signupBtn"><button class="signup-btn" onclick="redirectToSignup()">Sign up</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Travel History section -->
+    <section class="title-style">
+        <div class="container">
+            <div class="category-title">
+                <h5>Travel History</h5>
+                <h3>Your Booked Trips</h3>
+            </div>
+            <div id="travelHistoryContainer" class="travel-history-container">
+                <!-- Travel history content will be inserted here -->
+                <p>No travel history available.</p>
+            </div>
+        </div>
+    </section>
+    <script src="index.js" defer></script>
+
+    <section class="end-section">
+        <div class="container">
+            <p>MAKSOTOV ALI SE-2208</p>
+        </div>
+    </section>
+</body>
+
+</html>
